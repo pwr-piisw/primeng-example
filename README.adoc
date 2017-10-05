@@ -45,6 +45,36 @@ java -jar target\ng-boot-project-seed-0.0.1-SNAPSHOT.jar
 
 Open http://localhost:8080[http://localhost:8080] in your browser.
 
+Client application can be launched by running following commands:
+....
+cd src/main/client
+run start
+....
+Client application is served under http://localhost:4200[http://localhost:4200].
+
+==== Changing server port
+When `8080` port is by any reason busy, it can be easily changed by editing
+`src/resources/application.properties` file:
+....
+#Uncomment below line when standard port 8080 is occupied.
+server.port=8090
+....
+In addition proxy port must be configured for client application, we do this under
+`src/main/client/proxy.conf.json`:
+....
+{
+  "/services/rest": {
+    "target": "http://localhost:8090",
+    "secure": false
+  }
+}
+....
+In such case slightly different launching method for client should be used:
+....
+cd src/main/client
+run start-proxy
+....
+
 == How we created the application
 
 === Configure https://github.com/eirslett/frontend-maven-plugin[frontend-maven-plugin]
