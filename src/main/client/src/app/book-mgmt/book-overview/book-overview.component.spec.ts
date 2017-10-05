@@ -1,10 +1,11 @@
-import {async, ComponentFixture, TestBed} from "@angular/core/testing";
-import {BookOverviewComponent} from "./book-overview.component";
-import {RouterTestingModule} from "@angular/router/testing";
-import {BookService} from "../book.service";
-import {HttpModule} from "@angular/http";
-import {By} from "@angular/platform-browser";
-import {Observable} from "rxjs";
+import {async, ComponentFixture, TestBed} from '@angular/core/testing';
+import {BookOverviewComponent} from './book-overview.component';
+import {RouterTestingModule} from '@angular/router/testing';
+import {BookService} from '../book.service';
+import {HttpModule} from '@angular/http';
+import {By} from '@angular/platform-browser';
+// tslint:disable-next-line:import-blacklist
+import {Observable} from 'rxjs';
 
 describe('BookOverviewComponent', () => {
     let component: BookOverviewComponent;

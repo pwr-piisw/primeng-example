@@ -1,6 +1,6 @@
-import {Injectable} from "@angular/core";
-import {Http} from "@angular/http";
-import {Observable, Observer} from "rxjs";
+import {Injectable} from '@angular/core';
+import {Http} from '@angular/http';
+import {Observable, Observer} from 'rxjs';
 
 @Injectable()
 export class BookService {
@@ -20,7 +20,7 @@ export class BookService {
 
     save(bookToSave: Book): void {
         if (bookToSave.id) {
-            let originalBook: Book = this.findById(bookToSave.id);
+            const originalBook: Book = this.findById(bookToSave.id);
             if (originalBook) {
                 originalBook.author = bookToSave.author;
                 originalBook.title = bookToSave.title;
@@ -36,7 +36,7 @@ export class BookService {
     }
 
     private findById(id: number): Book {
-        for (let book of this.books) {
+        for (const book of this.books) {
             if (book.id === id) {
                 return book;
             }

@@ -26,4 +26,5 @@ import {BookMgmtModule} from './book-mgmt/book-mgmt.module';
   bootstrap: [AppComponent]
 })
 export class AppModule {
+
 }
