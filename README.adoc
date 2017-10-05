@@ -53,7 +53,7 @@ run start
 Client application is served under http://localhost:4200[http://localhost:4200].
 
 ==== Changing server port
-When `8080` port is by any reason busy, it can be easily changed by editing
+When `8080` port is busy by any reason, it can be easily changed by editing
 `src/resources/application.properties` file:
 ....
 #Uncomment below line when standard port 8080 is occupied.
