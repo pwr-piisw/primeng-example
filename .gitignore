@@ -38,10 +38,12 @@ Thumbs.db
 .springBeans
 
 ### IntelliJ IDEA ###
-.idea
 *.iws
 *.iml
 *.ipr
+.idea/libraries
+.idea/sonarlint
+.idea/workspace.xml
 
 ### NetBeans ###
 nbproject/private/
