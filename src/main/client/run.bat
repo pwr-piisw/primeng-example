@@ -1,2 +1,2 @@
-node\npm run-script %1%
+node\npm run-script %*%
 
