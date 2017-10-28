@@ -9,6 +9,7 @@ import {RouterModule} from '@angular/router';
 import {APP_ROUTES} from './app.routing';
 import {BookService} from './book-mgmt/book.service';
 import {BookMgmtModule} from './book-mgmt/book-mgmt.module';
+import {DataTableModule, SharedModule} from 'primeng/primeng';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,13 @@ import {BookMgmtModule} from './book-mgmt/book-mgmt.module';
     HttpModule,
     RouterModule.forRoot(APP_ROUTES),
     GeneralModule,
-    BookMgmtModule
+    BookMgmtModule,
+    DataTableModule,
+    SharedModule
+  ],
+  exports: [
+    DataTableModule,
+    SharedModule
   ],
   providers: [BookService],
   bootstrap: [AppComponent]

@@ -7,9 +7,27 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooComponent implements OnInit {
 
-  constructor() { }
+  persons: Person[];
+
+  constructor() {
+    this.persons = [
+      {
+        name: 'John Doe',
+        age: 39
+      },
+      {
+        name: 'Jim Morrison',
+        age: 27
+      }
+    ];
+  }
 
   ngOnInit() {
   }
 
+}
+
+export interface Person {
+  name: string;
+  age: number;
 }
