@@ -3769,9 +3769,9 @@ pretty-error@^2.0.2:
     renderkid "^2.0.1"
     utila "~0.4"
 
-primeng@4.1.3:
-  version "4.1.3"
-  resolved "https://registry.yarnpkg.com/primeng/-/primeng-4.1.3.tgz#7d165a3e0cf5925df1af0b1f9e2d02d1eda22850"
+primeng@4.3.0:
+  version "4.3.0"
+  resolved "https://registry.yarnpkg.com/primeng/-/primeng-4.3.0.tgz#687ecd1e1a158cf0e8742efc7da9b9338cd470c3"
 
 process-nextick-args@~1.0.6:
   version "1.0.7"

@@ -17,4 +17,8 @@ export class UsersListComponent implements OnInit {
   ngOnInit() {
   }
 
+  onRowSelect(event) {
+    this.onSelected.emit(event.data.id);
+  }
+
 }

@@ -1,5 +1,5 @@
 <p>
-  <p-dataTable [value]="users">
+  <p-dataTable [value]="users" selectionMode="single" (onRowSelect)="onRowSelect($event)">
     <p-column field="login" header="Login"></p-column>
     <p-column field="firstName" header="First name"></p-column>
     <p-column field="lastName" header="Last name"></p-column>

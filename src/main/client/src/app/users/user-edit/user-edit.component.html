@@ -1,0 +1,20 @@
+<div *ngIf="user" class="ui-g">
+  <div class="ui-g-12">
+  <span class="ui-float-label">
+    <input type="text" id="float-input" pInputText [(ngModel)]="user.login">
+    <label for="float-input">User login</label>
+  </span>
+  </div>
+  <div class="ui-g-12">
+  <span class="ui-float-label">
+    <input type="text" id="float-input" pInputText [(ngModel)]="user.firstName">
+    <label for="float-input">First name</label>
+  </span>
+  </div>
+  <div class="ui-g-12">
+  <span class="ui-float-label">
+    <input type="text" id="float-input" pInputText [(ngModel)]="user.lastName">
+    <label for="float-input">Last name</label>
+  </span>
+  </div>
+</div>

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {User} from '../model/user';
 
 @Component({
@@ -26,9 +26,16 @@ export class UsersMgmtComponent implements OnInit {
     }
   ];
 
-  constructor() { }
+  selected: User = null;
+
+  constructor() {
+  }
 
   ngOnInit() {
+  }
+
+  onUserSelected(userId: number) {
+    this.selected = this.users.filter((user: User) => user.id === userId)[0];
   }
 
 }

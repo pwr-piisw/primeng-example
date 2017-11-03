@@ -1,2 +1,4 @@
-<app-users-list [users]="users">
+<app-users-list [users]="users" (onSelected)  ="onUserSelected($event)">
 </app-users-list>
+<app-user-edit [user]="selected">
+</app-user-edit>
