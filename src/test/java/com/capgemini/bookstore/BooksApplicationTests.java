@@ -1,4 +1,4 @@
-package com.capgemini.books;
+package com.capgemini.bookstore;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

@@ -29,6 +29,10 @@ src/main/client/e2e/*.map
 .DS_Store
 Thumbs.db
 
+#Database
+database/
+derby.log
+
 ### STS ###
 .apt_generated
 .classpath

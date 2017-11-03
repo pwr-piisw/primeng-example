@@ -1,4 +1,4 @@
-package com.capgemini.books;
+package com.capgemini.bookstore;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
